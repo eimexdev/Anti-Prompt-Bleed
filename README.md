@@ -9,7 +9,7 @@ This skill is narrowly scoped: it removes user-visible leakage of prompts, hidde
 Install with the skills.sh CLI:
 
 ```bash
-npx skills add eimex/anti-prompt-bleed
+npx skills add eimexdev/anti-prompt-bleed
 ```
 
 Then restart your agent so the skill is picked up.
