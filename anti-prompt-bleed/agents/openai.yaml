@@ -1,4 +1,4 @@
 interface:
   display_name: "Anti Prompt Bleed"
   short_description: "Prevent instruction leakage in UI copy"
-  default_prompt: "Use $anti-prompt-bleed to review a generated website or app and remove only user-visible instruction, prompt, agent, or implementation leakage."
+  default_prompt: "Use $anti-prompt-bleed to review a generated website or app and remove only user-visible instruction, prompt, assistant, or implementation leakage."

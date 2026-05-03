@@ -1,6 +1,6 @@
 ---
 name: anti-prompt-bleed
-description: Prevent instruction and prompt bleed in generated website, app, and frontend UI copy. Use when Codex designs, builds, edits, or reviews websites, landing pages, dashboards, SaaS apps, product interfaces, React/Vue/Svelte/HTML screens, seed content, mock data, onboarding flows, forms, empty states, errors, or any user-visible web/app text that could accidentally expose hidden instructions, user prompts, implementation requirements, design constraints, tool behavior, system/developer guidance, planning notes, or internal task wording.
+description: Prevent instruction and prompt bleed in generated website, app, and frontend UI copy. Use when an AI coding agent designs, builds, edits, or reviews websites, landing pages, dashboards, SaaS apps, product interfaces, React/Vue/Svelte/HTML screens, seed content, mock data, onboarding flows, forms, empty states, errors, or any user-visible web/app text that could accidentally expose hidden instructions, user prompts, implementation requirements, design constraints, tool behavior, system/developer guidance, planning notes, or internal task wording.
 ---
 
 # Anti Prompt Bleed
@@ -18,7 +18,7 @@ Allowed:
 - Placeholder or mock content unless it includes leaked prompt/task language.
 
 Not allowed:
-- Text that reveals what the agent was told to do.
+- Text that reveals what the assistant was told to do.
 - Text that reveals system, developer, skill, or user instructions.
 - Text that reveals implementation requirements not meant for users.
 - Text that describes the generation process instead of the product.
@@ -29,11 +29,11 @@ Treat these as defects when they appear in user-visible UI:
 
 - Prompt references: "Based on your request", "As requested", "This page was generated", "The prompt asked for".
 - Instruction echoes: "Use lucide icons", "Make the first screen the app", "Avoid gradient orbs", "Keep cards at 8px radius", "Use AIDA".
-- Agent/process text: "I created", "I implemented", "Here is", "This component includes", "The layout uses".
+- Assistant/process text: "I created", "I implemented", "Here is", "This component includes", "The layout uses".
 - Requirements as copy: "Responsive on mobile and desktop", "Accessible with semantic HTML", "Built with React and Tailwind" unless the product is explicitly selling those facts to users.
 - Internal constraints: "No placeholder text", "No generic AI aesthetics", "No explanatory copy", "Follow the design system".
 - Planning residue: "Step 1", "TODO", "Acceptance criteria", "Success criteria", "Implementation notes", "Test plan".
-- Tool/runtime leakage: mentions of Codex, ChatGPT, Claude, model behavior, system prompts, developer messages, skills, tools, local files, commands, or generated assets.
+- Tool/runtime leakage: mentions of model behavior, system prompts, developer messages, skills, tools, local files, commands, or generated assets.
 - Hidden-context contamination: text that uses wording from private instructions rather than from the product domain.
 
 ## Workflow
@@ -67,7 +67,7 @@ Examples:
 
 Before delivery, verify:
 
-- No visible text references prompts, instructions, agents, tools, skills, implementation, tests, TODOs, or design constraints.
+- No visible text references prompts, instructions, assistants, tools, skills, implementation, tests, TODOs, or design constraints.
 - No hidden/system/developer/user instruction wording appears as page copy.
 - No implementation requirement is exposed unless the product intentionally talks about that technology.
 - Non-leaky marketing copy is preserved, even if it is not how you would personally write it.
